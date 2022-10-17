@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Redesign of Poshmark</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container my-overall-container">
+        <div class="container my-title">
+            <h1>Responsive <br> Redesign <br> of Poshmark</h1>
+        </div>
+        
+        
+
+        <div class="container" style="margin-bottom: 5%;">
+            <img src="./asset/aesthetic-cropped.png" style="object-fit: contain;">
+        </div>
+
+        <div class="container">
+            
+            <div class="row my-section">
+                <div class="col-12 col-md-4">
+                    <h3>Context and Goal</h3>
+                </div>
+                <div class="col-12 col-md-8">
+                    <p> 
+                        As someone who frequently browses online secondhand shops, 
+                        I noticed that the shopping experience on Poshmark has often 
+                        been sub-optimal. However, it has one of the largest databases 
+                        of secondhand apparel products, so I decided to redesign the 
+                        landing page of Poshmark to make it easier for users to shop.
+                        <br>
+                        <br>
+                        As I was redesigning the webpage, I tried to keep in mind the
+                        goals that the original webpage was trying to achieve so that
+                        I can make the webpage more usable without sacrificing the 
+                        original goals of the page.
+                    </p>
+                </div>
+            </div>
+
+            <h2 style="margin-bottom: 3rem;">Identifying Usability Problems</h2>
+            <div class="d-flex justify-content-center">
+                <div class=" poshmark-link">
+                    <a href="https://poshmark.com/">
+                        <img src="./asset/Screen Shot 2022-10-16 at 8.11.55 PM.png" alt="A screenshot of poshmark">
+                        <img src="./asset/Screen Shot 2022-10-16 at 8.13.32 PM.png" alt="Another screenshot of poshmark">
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="row my-section">
+                <div class="col-12 col-md-4">
+                    <h3>Finding Problems</h3>
+                </div>
+                <div class="col-12 col-md-8">
+                    <p> 
+                        The landing page of Poshmark is not very <b>learnable</b>.
+                        It is difficult to navigate the site as a first time 
+                        user because they expect to see a navigation bar with 
+                        different product categories and a search bar to look 
+                        up specific keywords, but those are not present. In a 
+                        simplified user test where the participants were asked to
+                        find a pair of jeans, half of them were not able to find
+                        any pair within 30 seconds. 
+                    </p>
+
+                    <br>
+                    <p> In terms of <b>memorability</b>, the landing page of Poshmark 
+                      makes it difficult for casual users to recall what 
+                      to do because the webpage contains a lot of random 
+                      information that is not directly relevant to shopping.</p>
+
+                    <br>
+
+                    <p>
+                      This webpage is not <b>efficient</b> for frequent users either.
+                      To navigate to the product search page, they have to first pick a random brand that they might not even be interested in. 
+                    </p>
+
+                    <br>
+                    <p>Other problems include:</p>
+                    <ul>
+                      <li>The most significant part of the real estate is used to prompt users to login/register, even though it is not the main purpose of people’s visit.</li>
+                      <li>Having both “Top selling brands this week” and “(brands) Trending Now” is a little redundant.</li>
+                      <li>The visuals look like random stock images. They are not related to what Poshmark does. </li>
+                    </ul>
+
+
+
+                </div>
+            </div>
+
+            <div class="row my-section">
+                <div class="col-12 col-md-4">
+                    <h3>Accessibility</h3>
+                </div>
+                <div class="col-12 col-md-8">
+                    <p> 
+                        <a href="https://wave.webaim.org/">WebAIM WAVE</a> detected 2 missing form labels and 37 
+                        contrast errors, most of which are valid, 
+                        since a lot of texts are not very discernable from the 
+                        background. 
+                        <figure class="figure" style="margin-top: 1rem; margin-bottom:1rem; display: block;">
+                            <img src="./asset/problem1.png" class="figure-img img-fluid rounded" alt="A contrast error on Poshmark.">
+                            <figcaption class="figure-caption">Figure 1: A contrast error on Poshmark.</figcaption>
+                          </figure>
+                    </p>
+                    <p>
+                        This is one example of a contrast error on the Poshmark 
+                        landing page. It is really hard to see the text "photo by natymichele"
+                        over the picture background.
+
+                    </p>
+                </div>
+            </div>
+
+            <h2 style="margin-bottom: 3rem;">Visual Redesign</h2>
+            
+            <div class="row my-section">
+                <div class="col-12 col-md-4">
+                    <h3>Goals</h3>
+                </div>
+                <div class="col-12 col-md-8">
+                    <p> 
+                        After identifying the problems, I decided to make 2 
+                        iterations of wireframes before the actual implementation.
+                        Apart from addressing the usability problems mentioned 
+                        above, I also wanted to keep in mind the original goals 
+                        that the page was trying to accomplish. I've identified
+                        the most important ones below:
+                        <ol>
+                            <li>Promote different brands</li>
+                            <li>Encourage people to download the mobile app</li>
+                            <li>Promote the notion of the Poshmark community</li>
+                            <li>Encourage people to sell on Poshmark</li>
+                        </ol>
+                        
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="row my-section">
+                <div class="col-12 col-md-4">
+                    <h3>Low-fidelity Wireframing</h3>
+                </div>
+                <div class="col-12 col-md-8">
+
+
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="card ">
+                          <div class="card-header my-collapsible-btn-1" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-decoration: none;">
+                                Desktop(annotated)
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <figure class="figure" style="margin-top: 1rem; margin-bottom:1rem; display: block;">
+                                    <img src="./asset/lo-fi/lofi-anno.png" class="figure-img img-fluid rounded" alt="Low-fidelity wireframe for desktops">
+                                    <figcaption class="figure-caption">Figure 2: Low-fidelity wireframe for desktops</figcaption>
+                                </figure>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="card ">
+                          <div class="card-header my-collapsible-btn-2" id="headingTwo">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="text-decoration: none;">
+                                Tablet
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <figure class="figure" style="margin-top: 1rem; margin-bottom:1rem; display: block;">
+                                    <img src="./asset/lo-fi/lofi-tablet.png" class="figure-img img-fluid rounded" alt="Low-fidelity wireframe for tablets">
+                                    <figcaption class="figure-caption">Figure 3: Low-fidelity wireframe for tablets</figcaption>
+                                </figure>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+                        <div class="card">
+                          <div class="card-header my-collapsible-btn-3" id="headingThree">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="text-decoration: none;">
+                                Mobile
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                            <figure class="figure" style="margin-top: 1rem; margin-bottom:1rem; display: block;">
+                                <img src="./asset/lo-fi/lofi-mobile.png" class="figure-img img-fluid rounded w-50" alt="Low-fidelity wireframe for mobile devices">
+                                <figcaption class="figure-caption">Figure 4: Low-fidelity wireframe for mobile devices</figcaption>
+                            </figure>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+
+
+            <div class="row my-section">
+              <div class="col-12 col-md-4">
+                  <h3>Visual Design Style Guide</h3>
+              </div>
+              <div class="col-12 col-md-8">
+                <img src="./asset/hifi/style.png">
+              </div>
+            </div>
+
+
+            <div class="row my-section">
+                <div class="col-12 col-md-4">
+                    <h3>High-fidelity Wireframing</h3>
+                </div>
+                <div class="col-12 col-md-8">
+
+
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="card ">
+                          <div class="card-header my-collapsible-btn-1" id="headingOneH">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOneH" aria-expanded="true" aria-controls="collapseOneH" style="text-decoration: none;">
+                                Desktop
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseOneH" class="collapse show" aria-labelledby="headingOneH" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <figure class="figure" style="margin-top: 1rem; margin-bottom:1rem; display: block;">
+                                    <img src="./asset/hifi/hifi-desktop.png" class="figure-img img-fluid rounded" alt="Low-fidelity wireframe for desktops">
+                                    <figcaption class="figure-caption">Figure 2: Low-fidelity wireframe for desktops</figcaption>
+                                </figure>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="card ">
+                          <div class="card-header my-collapsible-btn-2" id="headingTwoH">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwoH" aria-expanded="false" aria-controls="collapseTwoH" style="text-decoration: none;">
+                                Tablet
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwoH" class="collapse" aria-labelledby="headingTwoH" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <figure class="figure" style="margin-top: 1rem; margin-bottom:1rem; display: block;">
+                                    <img src="./asset/hifi/hifi-tablet.png" class="figure-img img-fluid rounded" alt="Low-fidelity wireframe for tablets">
+                                    <figcaption class="figure-caption">Figure 3: Low-fidelity wireframe for tablets</figcaption>
+                                </figure>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+                        <div class="card">
+                          <div class="card-header my-collapsible-btn-3" id="headingThreeH">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThreeH" aria-expanded="false" aria-controls="collapseThreeH" style="text-decoration: none;">
+                                Mobile
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseThreeH" class="collapse" aria-labelledby="headingThreeH" data-parent="#accordionExample">
+                            <div class="card-body">
+                            <figure class="figure" style="margin-top: 1rem; margin-bottom:1rem; display: block;">
+                                <img src="./asset/hifi/hifi-mobile.png" class="figure-img img-fluid rounded w-50" alt="Low-fidelity wireframe for mobile devices">
+                                <figcaption class="figure-caption">Figure 4: Low-fidelity wireframe for mobile devices</figcaption>
+                            </figure>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+
+            <h2 style="margin-bottom: 2rem;">Responsive Redesign</h2>
+
+            
+            <div class="row my-section">
+              <div class="col-12 col-md-4">
+                <a href="https://olddragon000.github.io/poshmark-redesign/">
+                  <h3>Click Me</h3>
+                </a>
+              </div>
+              <div class="col-12 col-md-8">
+                <img src="./asset/Screen Shot 2022-10-17 at 12.17.26 AM.png" alt="Screenshot of the redesigned webpage">
+              </div>
+            </div>
+
+
+           
+
+            
+        </div>
+
+        
+
+
+    </div>
+    
+</body>
+</html>
